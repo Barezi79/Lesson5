@@ -5,7 +5,7 @@ public class HarryPotter {
 	private boolean cloakOn;
 
 	HarryPotter() {
-		System.out.println("making Harry Potter...");
+		System.out.println("Making Harry Potter...");
 	}
 
 	void castSpell(String spell) {
@@ -16,9 +16,9 @@ public class HarryPotter {
 		this.cloakOn = invisible;
 
 		if (cloakOn)
-			System.out.println("Harry is invisible");
+			System.out.println("Harry is invisible.");
 		else
-			System.out.println("Harry is visible");
+			System.out.println("Harry is visible.");
 	}
 
 	void spyOnSnape() {
@@ -27,10 +27,15 @@ public class HarryPotter {
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+		HarryPotter H = new HarryPotter();
 		// 2. become invisible
+		H.makeInvisible(true);
 		// 3. spy on professor snape
+		H.spyOnSnape();
 		// 4. become visible again
-		// 5. cast a “stupefy” spell
+		H.makeInvisible(false);
+		// 5. cast a â€œstupefyâ€� spell
+		H.castSpell("stupify");
 	}
 
 }
